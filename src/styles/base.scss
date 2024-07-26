@@ -1,0 +1,39 @@
+@use './theme';
+@use './components';
+
+// Layout
+@use './layout/hero';
+@use './layout/event';
+@use './layout/gallery';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: theme.$fontFamily;
+  cursor: default;
+}
+
+body {
+  background: url("../images/background.svg") no-repeat bottom;
+  background-size: cover;
+  background-color: theme.$backgroundColor;
+  font-size: 16px;
+  color: theme.$firstColor;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

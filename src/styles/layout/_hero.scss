@@ -1,0 +1,59 @@
+@use '../theme';
+
+.hero {
+  position: relative;
+  width: 100%;
+  // min-height: 561px;
+  background-image: url("../images/hero-background.png");
+  background-position: center;
+  background-size: cover;
+  padding: 64px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#0d00348c, theme.$thirdColor);
+    mix-blend-mode: hard-light;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .title {
+    color: theme.$thirdColor;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__brand {
+    display: block;
+    margin: 0 auto 64px auto;
+  }
+
+  &__info {
+    display: flex;
+    background-color: #ffffff66;
+    box-shadow: inset 0 0 0 1px #ccc;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    padding: 16px;
+    border-radius: 16px;
+    margin-top: 64px;
+
+    .text {
+      color: theme.$firstColor;
+
+      &--bg {
+        margin-bottom: 8px;
+      }
+    }
+
+  }
+}

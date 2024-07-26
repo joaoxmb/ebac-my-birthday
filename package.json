@@ -1,0 +1,21 @@
+{
+  "name": "ebac-my-birthday",
+  "version": "1.0.0",
+  "description": "Este projeto é dedicado ao meu aniversário",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "prod": "vercel --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0",
+    "sharp": "^0.31.3"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  }
+}

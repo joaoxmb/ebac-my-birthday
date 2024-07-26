@@ -1,0 +1,95 @@
+@use './theme';
+
+.text {
+  font-family: theme.$fontFamily;
+  font-weight: normal;
+  font-size: 1rem;
+  color: theme.$firstColor;
+  display: block;
+
+  &--sm {
+    font-size: 0.875rem;
+  }
+  &--bg {
+    font-size: 1.125rem;
+  }
+  &--bold {
+    font-weight: bold;
+  }
+  &--center {
+    text-align: center;
+  }
+}
+
+.title {
+  font-family: theme.$fontFamily;
+  font-weight: bold;
+  font-size: min(2.5rem, 8.5vw);
+  color: theme.$firstColor;
+  margin-bottom: 16px;
+
+  &--md {
+    font-size: min(1.8rem, 6.6vw);
+    font-size: 1.8rem;
+  }
+  &--bg {
+    font-size: min(3rem, 10vw);
+  }
+  &--center {
+    text-align: center;
+  }
+}
+
+.image {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.button {
+  display: block;
+  align-content: center;
+  background-color: theme.$secondColor;
+  border-radius: 8px;
+  padding: 12px;
+  color: theme.$firstColor;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: darken(theme.$secondColor, 5%);  
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 64px 0;
+
+  .text {
+    color: theme.$thirdColor;
+  }
+
+  &__brand {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+
+    img {
+      width: 12rem;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    color: theme.$firstColor;
+  }
+
+  @media (max-width: theme.$breakMobile) {
+
+    &__brand img {
+      width: 10rem;
+    }    
+  }
+}
