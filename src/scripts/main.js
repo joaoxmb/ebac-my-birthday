@@ -16,7 +16,7 @@ const handlerText = () => {
 }
 const handlerEvent = () => {
   const now = new Date();
-  const birthday = new Date(`8-20-${now.getFullYear()}`);
+  const birthday = new Date(`8/20/${now.getFullYear()}`);
 
   // Aniversário já passou
   if (now.getTime() > birthday.getTime()) {
